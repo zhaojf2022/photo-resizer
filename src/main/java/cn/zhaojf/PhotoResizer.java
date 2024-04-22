@@ -16,7 +16,7 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
-public class ImageResizer {
+public class PhotoResizer {
     public static void main(String[] args) {
 
         if(args[0] == null){
@@ -28,7 +28,7 @@ public class ImageResizer {
         if (fileOrDirectory.isDirectory()) {
             try (Stream<Path> paths = Files.walk(Paths.get(args[0]))) {
                 paths.filter(Files::isRegularFile)
-                    .filter(ImageResizer::isImageFile)
+                    .filter(PhotoResizer::isImageFile)
                     .forEach(path -> processImageFile(path.toFile()));
             } catch (IOException e) {
                 System.out.println("遍历目录时发生异常：" + e.getMessage());

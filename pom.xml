@@ -34,7 +34,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>cn.zhaojf.ImageResizer</mainClass>
+                            <mainClass>cn.zhaojf.PhotoResizer</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -44,7 +44,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>cn.zhaojf.ImageResizer</mainClass>
+                            <mainClass>cn.zhaojf.PhotoResizer</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
